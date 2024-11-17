@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div>
+    <header class="header"> Заголовок страницы</header>
+    <div class="container">
+        <main class="main"> Основной контент</main>
+        <aside class="aside"> правая колонка</aside>
+    </div>
+    <footer class="footer">подвал страницы</footer>
+</div>
+</body>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .page {
+        width: 1280px;
+        padding: 32px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        width: 100%;
+        padding: 32px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .container {
+        width: 100%;
+        padding: 32px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.1);
+        display: flex;
+    }
+    @media (max-width:768px) {
+        .container {
+            display: block;
+        }
+    }
+    .main {
+        width: 100%;
+        padding: 32px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+    .aside {
+        width: 80%;
+        padding: 32px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    @media (width <768px) {
+        .main {
+        width: 60%;
+        padding: 32px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .aside {
+        width: 40%;
+        padding: 32px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.1);
+    }
+}
+.footer {
+    width: 100%;
+    padding: 32px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.1);
+}
+</style>
+</html>

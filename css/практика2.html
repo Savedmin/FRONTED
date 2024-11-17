@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="list">
+        <p class="accent">текс текс</p>
+        <ol class="list1" id="list_123">
+            <li class="list-iten">Элемент списка</li>
+            <li class="list-iten accent red">Элемент списка</li>
+            <li class="list-iten">Элемент списка</li>
+            <li class="list-iten accent">Элемент списка</li>
+            <li class="list-iten">Элемент списка</li>
+            <li class="list-iten">Элемент списка</li>
+            <li class="list-iten red">Элемент списка</li>
+            <li class="list-iten">Элемент списка</li>
+            <li class="list-iten">Элемент списка</li>
+            <li class="list-iten accent">Элемент списка</li>
+            <li>
+                <ol class="list2">
+                    <li class="list-iten">Элемент списка</li>
+                    <li class="list-iten accent red">Элемент списка</li>
+                    <li class="list-iten">Элемент списка</li>
+                    <li class="list-iten accent">Элемент списка</li>
+                    <li class="list-iten">Элемент списка</li>
+                    <li class="list-iten">Элемент списка</li>
+                    <li class="list-iten red">Элемент списка</li>
+                    <li class="list-iten">Элемент списка</li>
+                    <li class="list-iten">Элемент списка</li>
+                    <li class="list-iten accent">Элемент списка</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <style>
+        body {
+            background: rgb(129, 118, 114) url(../mister_fresh.jpg) no-repeat;
+            background-size: 20%;
+            background-repeat: repeat-y;
+        }
+        .list {
+            background: url(../mister_fresh.jpg) no-repeat;
+            background-size: 20%;
+            background-repeat: repeat-y;
+            background-position: right;
+            width: 500px;
+        }
+        .list1 {
+            color: blue;
+        }
+        .list2{
+            color: rgb(10, 10, 10);
+        }
+        .red{
+            color: red;
+        }
+        .red.accent{
+            font-size: 20px;
+        }
+        .accent {
+            font-weight: bold;
+        }
+        .list1 > .accent {
+            color: rgb(238, 99, 6);
+        }
+        .list1 > .list-item {
+            display: inline;
+            font-family:  sans-serif;
+            font-weight: 100;
+        }
+        .list1 .accent {
+            text-transform: uppercase;
+        }
+    </style>
+</body>
+</html>

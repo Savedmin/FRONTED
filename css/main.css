@@ -1,0 +1,22 @@
+h1{
+    color: rgb(3, 200, 214);
+}
+h2{
+    color: magenta;
+    text-decoration: underline;
+}
+h3{
+    color: darkgreen;
+}
+h4{
+    color: rgb(247, 160, 0);
+}
+thead{color: rgb(236, 90, 36);}
+tbody{color: rgb(0, 0, 0);}
+tfoot{color: grey;}
+
+table, th, td {
+    border: 1px solid rgb(253, 0, 0);
+    }
+    </style>
+</head>

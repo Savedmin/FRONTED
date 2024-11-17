@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <form action="#" method="get">
+            <input type="text" name="text1" placeholder="тут можно вести текст" value="AUDI A5">
+            <input type="number" min="-20" max="20" step="5">
+            <input type="number" min="-20" max="20" step="5">
+            <input type="date">
+            <input type="time">
+            <input type="color"value="black">Черный матовый
+            
+            <button type="submit">Отправить</button>
+            <div>
+                <label><input type="checkbox" name="color" id="" value="yellow"> Желтый</label>
+                <label><input type="checkbox" name="color" id="" value="white">Белый</label>
+                <label><input type="checkbox" name="color" id="" value="black">Черный</label>
+                <label><input type="checkbox" name="color" id="" value="gren">Зеленый</label>
+            </div>
+             <div>
+                <label><input type="radio" name="color" id="" value="yellow"> Желтый</label>
+                <label><input type="radio" name="color" id="" value="white"> Белый</label>
+                <label><input type="radio" name="color" id="" value="black">Черный</label>
+                <label><input type="radio" name="color" id="" value="gren">Зеленый</label>
+            </div>
+            <input type="file" required>
+            <input id="pass" type="password" required>
+            <input type="email" required>
+            <input type="datetime-local"required>
+            <input type="month" required>
+            <input type="tel" required>
+            <input type="week" required>
+            <input type="url" required>
+            <label for="pass" >Пароль</label>
+            <label>
+                Please choose one or more pets:
+                <select name="pets">
+                    <option value="dog" selected>Dog</option>
+                    <option value="cat"> Cat</option>
+                    <option value="hamster" >hamster</option>
+                    <option value="parrot"> parrot</option>
+                    <option value="macaw" >macaw</option>
+                </select>
+            </label>
+        </form>
+    </div>
+</body>
+<style>
+    :root {
+        --background-color; rgba(0,255,0,0.1)
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .page {
+        width: 100%;
+        padding: 32px;
+        margin: 0 auto;
+        background: var(--background-color);
+    }
+</html>
